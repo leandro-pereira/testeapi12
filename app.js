@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const indexRoute = require('./Routes/index');
+const indexRoute = require('./routes/index');
 
 app.use('/instagram/', indexRoute);
 app.listen(3000);
