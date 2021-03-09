@@ -15,6 +15,8 @@ router.get('/:id', (req, res) => {
   })();
 });
 
-router.post('/', (req, res) => {});
+router.get('/', (req, res) => {
+  res.send('Olá bem -vindo');
+});
 
 module.exports = router;
