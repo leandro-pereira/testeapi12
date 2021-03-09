@@ -7,7 +7,7 @@ router.get('/:id', (req, res) => {
     try {
       const options = { count: 100 };
       const comments = await instaTouch.comments(req.params.id, options);
-      // res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Origin', '*');
       return res.send(comments);
     } catch (error) {
       console.log(error);
